@@ -12,6 +12,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet">
 
     <style>
     /* Make the image fully responsive */
@@ -95,6 +96,25 @@
               <span class="carousel-control-next-icon"></span>
             </a>
         </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-12" align="center">
+            <p id="home_caption" >{{ home_caption.0.text }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <img id="home_picture" src="{{ home_pictures.0.picture.url }}" alt="New York">
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-12" align="center">
+            <p id="home_caption" >{{ home_caption.1.text }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <img id="home_picture" src="{{ home_pictures.1.picture.url }}" alt="New York">
     </div>
 </div>
 
