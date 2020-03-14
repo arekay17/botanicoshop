@@ -11,6 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
 
     <style>
     /* Make the image fully responsive */
@@ -51,7 +52,7 @@
 <div class="container-fluid">
     <div class="row" >
         <div class="col-md-12 col-sm-12 col-12" align="center"> 
-            <h1>BOTANICO</h1>
+            <h1>BOTANICO FACIAL SERUM</h1>
         </div>
     </div>
 </div>
@@ -68,22 +69,22 @@
               <div class="carousel-item active">
                 <img src="{{ carousel_desktop.0.picture.url }}" alt="Los Angeles" width="1100" height="500">
                 <div class="carousel-caption">
-                  <h3>Los Angeles</h3>
-                  <p>We had such a great time in LA!</p>
+                  <h3>{{ carousel_desktop.0.title }}</h3>
+                  <p>{{ carousel_desktop.0.caption }}</p>
                 </div>   
               </div>
               <div class="carousel-item">
                 <img src="{{ carousel_desktop.1.picture.url }}" alt="Chicago" width="1100" height="500">
                 <div class="carousel-caption">
-                  <h3>Chicago</h3>
-                  <p>Thank you, Chicago!</p>
+                    <h3>{{ carousel_desktop.1.title }}</h3>
+                    <p>{{ carousel_desktop.1.caption }}</p>
                 </div>   
               </div>
               <div class="carousel-item">
                 <img src="{{ carousel_desktop.2.picture.url }}" alt="New York" width="1100" height="500">
                 <div class="carousel-caption">
-                  <h3>New York</h3>
-                  <p>We love the Big Apple!</p>
+                    <h3>{{ carousel_desktop.2.title }}</h3>
+                    <p>{{ carousel_desktop.2.caption }}</p>
                 </div>   
               </div>
             </div>
@@ -97,12 +98,6 @@
     </div>
 </div>
 
-<!-- <div class="container-fluid">
-    <div class="row">
-        {{ carousel_desktop.0.title }}
-        <img src="{{ carousel_desktop.0.picture.url }}" alt="Nature" style="width:100%">
-    </div>
-</div> -->
 
 </body>
 </html>
